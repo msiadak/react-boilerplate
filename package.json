@@ -1,0 +1,17 @@
+{
+  "name": "react-boilerplate",
+  "version": "0.1.0-prerelease",
+  "description": "The react tooling that's right for me",
+  "main": "index.js",
+  "repository": "https://github.com/msiadak/react-boilerplate",
+  "author": "Michael Siadak <mike.siadak@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.3",
+    "eslint": "^4.18.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "webpack": "^4.1.0"
+  }
+}
