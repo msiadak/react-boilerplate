@@ -14,14 +14,16 @@ module.exports = {
     rules: [
       {
         test: /\.jsx?$/,
-        include: [
-          path.resolve(__dirname, 'src'),
-        ],
+        include: [path.resolve(__dirname, 'src')],
         use: 'babel-loader',
       },
       {
         test: /\.ejs$/,
         use: 'ejs-loader',
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
