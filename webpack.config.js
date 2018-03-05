@@ -14,13 +14,15 @@ module.exports = {
     rules: [
       {
         test: /\.jsx?$/,
-        include: path.resolve(__dirname, 'src'),
+        include: [
+          path.resolve(__dirname, 'src'),
+        ],
         use: 'babel-loader',
       },
       {
         test: /\.ejs$/,
         use: 'ejs-loader',
-      }
+      },
     ],
   },
   plugins: [
@@ -35,5 +37,9 @@ module.exports = {
   devServer: {
     contentBase: './dist',
     hot: true,
+  },
+  optimization: {
+    splitChunks: {},
+    runtimeChunk: true,
   },
 };

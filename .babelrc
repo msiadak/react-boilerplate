@@ -1,14 +1,13 @@
 {
-  "presets": [
-    [
-      "env",
-      {
-        "targets": {
-          "browsers": ["last 2 versions"]
-        },
-        "modules": false
-      }
-    ]
+  "presets": [["env", { "modules": false }]],
+  "plugins": [
+    "transform-react-jsx",
+    "react-hot-loader/babel",
+    "syntax-dynamic-import"
   ],
-  "plugins": ["transform-react-jsx", "react-hot-loader/babel"]
+  "env": {
+    "test": {
+      "plugins": ["transform-es2015-modules-commonjs", "dynamic-import-node"]
+    }
+  }
 }
